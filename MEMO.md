@@ -103,3 +103,6 @@ $ vue create todo-front
 
 student@M702 MINGW64 ~/development/vue_django/todo-front (master)
 $ rm -rf .git
+
+student@M702 MINGW64 ~/development/vue_django/todo-front (master)
+$ vue ui
