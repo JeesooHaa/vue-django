@@ -5,7 +5,9 @@
       <router-link to="/login">Login</router-link>
     </div>
     <!-- click 했을 때 home / about 이 된다. -->
-    <router-view/>
+    <div class="container col-6">
+      <router-view/>
+    </div>
   </div>
 </template>
 

@@ -106,3 +106,11 @@ $ rm -rf .git
 
 student@M702 MINGW64 ~/development/vue_django/todo-front (master)
 $ vue ui
+
+student@M702 MINGW64 ~/development/vue_django/todo-front (master)
+$ npm i bootstrap bootstrap-vue
+
+student@M702 MINGW64 ~/development/vue_django/todo-front (master)
+$ npm i axios
+
+CORS...
