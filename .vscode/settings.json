@@ -1,0 +1,6 @@
+{
+    "git.ignoreLimitWarning": true,
+    // 없으면 빨간줄 그어짐 
+    "python.pythonPath": "todo-back\\venv\\Scripts\\python.exe",
+    "python.linting.enabled": false
+}

@@ -114,3 +114,17 @@ student@M702 MINGW64 ~/development/vue_django/todo-front (master)
 $ npm i axios
 
 CORS...
+
+student@M702 MINGW64 ~/development/vue_django/todo-back (master)
+$ pip install djangorestframework
+
+student@M702 MINGW64 ~/development/vue_django/todo-back (master)
+$ pip install djangorestframework-jwt
+
+student@M702 MINGW64 ~/development/vue_django/todo-back (master)
+$ pip install django-cors-headers
+
+access token : 접근할 때 사용
+refresh token : access token 요청시 같이 발행 
+
+jwt.io
