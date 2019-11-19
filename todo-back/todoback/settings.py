@@ -50,6 +50,7 @@ INSTALLED_APPS = [
 
 #  jwt  관련 세팅 
 #  https://jpadilla.github.io/django-rest-framework-jwt/
+#  view 함수로 들어가기 전 인증 및 로그인 여부를 확인 
 REST_FRAMEWORK = {
     # 로그인 여부 확인 
     'DEFAULT_PERMISSION_CLASSES': (
