@@ -1,8 +1,17 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/login">Login</router-link>
+      <!-- 조건부 렌더링 -->
+      <div v-if="isLoggedIn">
+        <router-link to="/">Home</router-link> |
+        <!-- a tag 는 새로고침을 해준다. -->
+        <!-- prevent 를 사용하는 이유는 href 로 redirect 를 방지하기 위함 -->
+        <!-- 기능적으로는 login 으로 바로 가도 되지만 명시적으로 하기 위해 -->
+        <a @click.prevent="logout" href="/logout">Logout</a>
+      </div>
+      <div v-else>
+        <router-link to="/login">Login</router-link>
+      </div>
     </div>
     <!-- click 했을 때 home / about 이 된다. -->
     <div class="container col-6">
@@ -10,6 +19,29 @@
     </div>
   </div>
 </template>
+
+<script>
+import router from '@/router'
+
+export default {
+  name: 'App',
+  data() {
+    return {
+      isLoggedIn: this.$session.has('jwt')
+    }
+  },
+  methods: {
+    logout() {
+      this.$session.destroy()
+      router.push('/login')
+    }
+  },
+  // data 에 변화가 일어나는 시점에 실행하는 함수 
+  updated() {
+    this.isLoggedIn = this.$session.has('jwt')
+  }
+}
+</script>
 
 <style>
 #app {

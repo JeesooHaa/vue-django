@@ -128,3 +128,11 @@ access token : 접근할 때 사용
 refresh token : access token 요청시 같이 발행 
 
 jwt.io
+
+토큰을 가지고 있다 => 로그인이 되어 있는 상태이다. 
+세션 스토리지, 로컬 스토리지, 토큰 
+
+student@M702 MINGW64 ~/development/vue_django/todo-front (master)
+$ npm install vue-session
+
+조건부 렌더링 ! 
