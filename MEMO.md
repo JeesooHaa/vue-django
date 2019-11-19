@@ -136,3 +136,6 @@ student@M702 MINGW64 ~/development/vue_django/todo-front (master)
 $ npm install vue-session
 
 조건부 렌더링 ! 
+
+student@M702 MINGW64 ~/development/vue_django/todo-front (master)
+$ npm i jwt-decode
