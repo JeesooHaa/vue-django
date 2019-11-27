@@ -48,6 +48,7 @@ export default {
       if(this.checkForm()) {
         this.loading = true
         // 127.0.0.1:8000
+        // 이 친구를 넣어서 배포해야함
         const SERVER_IP = process.env.VUE_APP_SERVER_IP
         // 토큰 발급!!
         axios.post(SERVER_IP + '/api-token-auth/', this.credentials)
